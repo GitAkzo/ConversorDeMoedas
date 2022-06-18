@@ -1,0 +1,213 @@
+* {
+  text-decoration: none;
+}
+
+html,body{
+  margin:0;
+}
+
+body {
+  height: 140vh;
+  width: 100vw;
+  font-family: 'Roboto Mono',monospace;
+  color: #2cd4d9;
+  background: linear-gradient(68.15deg, #900020 16.62%, #8f001fab  85.61%);
+  overflow-x: hidden;
+}
+
+header {
+  background: #7F1734;
+  border-bottom: 0.4px solid #FFF2E7;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logos {
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-logo {
+  padding-left: 1rem;
+  width: 12.5rem;
+}
+  
+.alura-logo {
+  padding-right: 1rem;
+  width: 2.5rem;
+}
+  
+.container {
+  text-align: center;
+}
+
+.box {
+  position: absolute;
+  width: 18.75rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+}
+
+.value-to-convert {
+  margin-top: 1rem;
+  padding: 1.25rem;
+}
+
+.value-dolar {
+  margin-top: 1rem;
+  padding: 1.25rem;
+}
+
+input {
+  padding-top: 1rem;
+  width: 100%;
+  font-size: 13px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #2cd4d9;
+  color: white;
+}
+
+input:focus {
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  width: 100%;
+  font-size: 13px;
+  background: none;
+}
+
+.result {
+  padding: 1.25rem;
+  margin-top: 10vh;
+}
+
+/* From cssbuttons.io */
+button {
+  margin-bottom: 1rem;
+  padding: 1.5em 7em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+ }
+ 
+ button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+ }
+ 
+ button:active {
+  transform: translateY(-1px);
+ }
+
+footer {
+  position: absolute;
+  bottom: -40vh;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: auto;
+  border-top: 0.4px solid #FFF2E7;
+  background: #111;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 5px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .box {
+    width: 20rem;
+  }
+  .result {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .page-logo {
+  width: 7.5rem;
+} 
+  .result {
+     padding: 0 1.25rem 1.25rem 1.25rem;
+    margin-top: 0;
+  }
+  .value-to-convert {
+    margin-top: 0;
+    padding: 1rem 1.25rem 0 1.25rem;
+  }
+  .value-dolar {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+   .result {
+     padding: 0 1.25rem 1.25rem 1.25rem;
+    margin-top: 0;
+  }
+  .value-to-convert {
+    margin-top: 0;
+    padding: 1rem 1.25rem 0 1.25rem;
+  }
+  .value-dolar {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+}
